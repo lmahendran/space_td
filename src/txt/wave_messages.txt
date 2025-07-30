@@ -1,0 +1,100 @@
+Welcome to Space Tower Defense! This is your occasional round message. Start by placing your first tower somewhere, by clicking one on a tower in the sidebar, then clicking again where you want your tower. Oh, and if you want to get rid of this, just click on the message and it will go away.
+As you saw the last round, a bunch of red balloons spawned. On this round, a some blue balloons will spawn. These contain each one red balloon, as well as its own layer. So, 2 layers to pop overall.
+You can upgrade towers by selecting them, then buy the upgrade in that menu if you have enough money.
+Time for a new balloon: the green balloon. This one holds a blue balloon, and has another layer. You can probably see a pattern here...
+In this game, there isn't really a way to win. The goal is to make it as far as you can, with whatever method you can manage to put together.
+You might be wondering what the five little squares are in the upgrade menu. The first one corresponds to a speed buff, second one range buff, third one discount, fourth one attack buff, and fifth one hidden vision. To be active, they will be coloured in.
+Here comes the yellow balloons! One layer up from green, and moves even faster!
+Something important to note is that the balloons get incrementally faster every round. Just good advice for later on.
+Remember that your game gets saved at the end of every round! And if you ever need to, click the bottom left button mid-round if you ever want to pause and take a break.
+The fastest of the coloured balloons are the pink balloons. One layer above yellow.
+This is the last round of consistent messages. Messages will appear periodically if something new pops up. Make sure to come up with some strategy with the towers. You can learn about the towers in the menu. Good luck, and have fun!
+
+Next balloon type: the rainbow balloon. This type contains 4 pink balloons inside of it.
+
+
+The final balloon type for a while is the metal balloon. This balloon contains two rainbow balloons inside.
+
+
+
+Here, you will see the first balloon effect: hidden balloons. These balloons are denoted with a camo cover and can only be seen by towers that have the green bar.
+
+
+
+
+Get ready for regrow balloons! This is another effect that allows balloons to grow back to their original form. For added fun, coloured balloons will always regrow to a pink one, no matter where they start.
+
+
+
+
+Have seven camo metals! It's an easy break if you have hidden defense, and an annoyance if you don't!
+You've seen hidden, and you've seen regrow. How about hidden regrow?
+
+
+
+A bonus tip: Boosters are great. At a certain point, they provide hidden vision to towers in range, which can take care of all of your hidden problems.
+
+
+
+
+Time for your first boss balloon! These guys hold 3 metal balloons, and are a little strong. They become much stronger as rounds progress.
+
+Have you placed a Generator yet? If so, now might be a good time. While these guys are a bit of an investment, they provide so much cash later on, it all becomes worth it.
+
+This is the beginning of the smiley face section along the next 5 rounds. It was created by the creator of all these waves: my brother Kishan.
+
+
+
+
+
+It's been a while since a boss has spawned... so have two! You'll start seeing them more frequently now.
+
+This round was contributed specially by Skye Trusler.
+
+
+
+If you haven't placed very good hidden or regrow defense, you're probably feeling the pain at this point...
+
+
+
+Round 60, well done on making it this far. It only gets worse...
+
+
+This is inspired by round 63 from BTD6 and BTD5. Tightly packed metal balloons.
+
+
+This round number usually signifies pain.
+
+
+420 pinks on round 69. Nice.
+Next level boss balloon incoming: the Tank! It holds four bosses, and has a lot of health. Good luck!
+
+
+
+
+75 metals on round 75. Not coincidental at all.
+As the person coding the rounds, I do not understand at all my brother's idea behind this set of rounds. Just have fun with four rounds of pure hidden regrow.
+
+
+
+At this point, the difficulty is going to ramp up quite a bit. I will give you silence for the next 10 rounds.
+
+
+
+
+
+
+
+
+
+Alright! Round 90 is here. Just 10 more to 100. There definitely won't be any random scaling here... right?
+
+
+
+
+This is the first of three waves in whats dubbed the Gauntlet of Pain and Unfun.
+I hope you don't get any pain, and have lots of fun playing these.
+Last wave of the gauntlet...
+And now... just one more round until 100!
+You've made it to round 100. As the theme from the name suggests (definitely not any other aspect), this game is related to space. The next balloon upcoming is the embodiment of this game's theme: the galaxy balloon. It holds four tanks, and has 3000 health alone.
+From now on, the rounds are completely randomized. You could lose instantly if your luck isn't so good. But that's part of the fun of it. I hope you enjoyed the main part of the game, and I wish you luck on getting as far as you can!

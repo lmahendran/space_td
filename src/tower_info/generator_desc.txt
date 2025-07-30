@@ -1,0 +1,5 @@
+<b>Speed:</b> 6 seconds<br><b>Value:</b> $50<br><b>Range:</b> 10 pixels<br><br><b><u>Info</u></b><br>The generator is here to MAKE MONEY! This is your easy way to get plenty of upgrades on other towers.</html>
+<b>Value:</b> $100<br><br><b><u>Info</u></b><br>The generator now makes twice as much money per generation.</html>
+<b>Speed:</b> 3 seconds<br><br><b><u>Info</u></b><br>The generator has gained 2x efficiency, so the flow of cash is even better.</html>
+<b>Speed:</b> 2 seconds<br><b>Value:</b> $200<br><br><b><u>Info</u></b><br>This generator has been improved even more! More speed, more production, MORE MONEY!</html>
+<b>Value:</b> $300<br><b>Range:</b> 200 pixels<br><b>+Passive: Self-Sustaining Business</b><br><b>+Passive: Corporal Patronage</b><br><br><b><u>Info</u></b><br>This is the highest tier of business in Space Tower Defense. It's valuable, it can collect its own cash, and it provides a 40% cash buff to surrounding generators as well!</html>

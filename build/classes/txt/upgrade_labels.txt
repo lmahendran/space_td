@@ -1,0 +1,9 @@
+Quicker Shots:<html>Increases attack speed.</html>,Stronger Shots:<html>Increases attack and range.</html>,Rifle Shots:<html>Speed upgraded even more.</html>,Deadly Assassin:<html>Long range powerful shots at lower speed.</html>
+More Magic:<html>Attack magically increased.</html>,Improved Magic:<html>Magical growth of other stats.</html>,Intense Magic:<html>Magic forces boost attack.</html>,Arcane Master:<html>The magic boosts EVERYTHING.</html>
+Speed Boost:<html>Speed boost for towers in range.</html>,Discount Boost:<html>10% off sale on upgrades!</html>,Range Boost:<html>Boosts range - including its own.</html>,Towers' Accomplice:<html>Many boosts and a special ability.</html>
+Deflate Speed:<html>Reduces speed of balloons.</html>,Deflate Regrow:<html>Reduces regrow time of balloons.</html>,Mega Deflate:<html>Reduces speed even more.</html>,Balloons' Fear:<html>Debuffs a LOT. Removes regrow property.</html>
+Valued Cash:<html>More cash stored each time.</html>,Frequent Cash:<html>Cash stored more often.</html>,Mint Cash:<html>Cash and speed boosted even more!.</html>,The World Bank:<html>Auto-collect and boosts others.</html>
+Faster Plane:<html>Shoots more often.</html>,Bullet Plane:<html>Centers plane and more bullets.</html>,Ace Plane:<html>Bullets seek out their target.</html>,Almighty Aircraft:<html>Shoots powerful bullets right at the enemy.</html>
+Accurate Bullets:<html>Increases accuracy.</html>,Lots of Bullets:<html>Increases fire rate and adds set targeting.</html>,Laser Bullets:<html>Bullets increase strength and accuracy.</html>,Plasma Ray:<html>One powerful ray of destruction.</html>
+
+

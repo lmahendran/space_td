@@ -1,0 +1,5 @@
+<b>Speed:</b> 2 seconds<br><b>Attack:</b> 2 damage<br><b>Range:</b> Infinite<br><b>Bullets:</b> 8<br><br><b><u>Info</u></b><br>Yes. Towers can now fly. This tower spawns a plane that flies over the tower, with the ability to shoot over obstacles. It shoots a bullet in a bunch of directions.</html>
+<b>Speed:</b> 1 second<br><br><b><u>Info</u></b><br>It seems that the last upgrade has a low hit rate. Let's improve it by sending those shots twice as often!</html>
+<b>Bullets:</b> 16<br><b>+Passive: Centered Flying</b><br><br><b><u>Info</u></b><br>Let's improve it some more. Place it in the middle of the map for more coverage, and send out twice as much shots at once!</html>
+<b>Attack:</b> 4 damage<br><b>Bullets:</b> 8<br><b>+Passive: Balloon-Tracking Technology</b><br><br><b><u>Info</u></b><br>Reduce the projectiles, because this tower can AIM! It's projectiles, equipped with twice as much power, now seek until they find their target.</html>
+<b>Speed:</b> 0.1 seconds<br><b>Attack:</b> 15 damage<br><b>Bullets:</b> 1<br><br><b><u>Info</u></b><br>BRING ON THE DOOMSHIP! Powerful projectiles are wreaking balloon destruction. Its might must not be underestimated.</html>

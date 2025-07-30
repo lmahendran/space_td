@@ -1,0 +1,5 @@
+<b>Speed Debuff:</b> 10%<br><b>Range:</b> 100 pixels<br><br><b><u>Info</u></b><br>This tower was very specifically designed to make things a little tougher for the balloons. For example, it already decreases the speed of balloons in range.</html>
+<b>Speed Debuff:</b> 20%<br><br><b><u>Info</u></b><br>So... just to make the balloons' lives a little worse, here's another speed debuff!</html>
+<b>Regrow Time:</b> 5 seconds<br><br><b><u>Info</u></b><br>The annoying regrow balloons have now been tamed... for now. It takes longer for them to regrow now.</html>
+<b>Speed Debuff:</b> 30%<br><b>Range:</b> 130 pixels<br><br><b><u>Info</u></b><br>Now, the deflator can reach more balloons, and decrease their speed even further.</html>
+<b>Speed Buff:</b> 60%<br><b>+Passive: Anti-Regrow</b><br><b>+Ability: Zap Stun</b><br><br><b><u>Info</u></b><br>This tower is now a nightmare for any balloons that come near. It periodically removes the regrow property from balloons, and temporarily stuns all balloons for a bit with its ability.</html>
