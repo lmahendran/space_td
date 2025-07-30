@@ -1,0 +1,5 @@
+<b>Speed:</b> 1 second<br><b>Attack:</b> 1 damage<br><b>Range:</b> 100 pixels<br><br><b><u>Info</u></b><br>The shooter is your typical tower that shoots balloons. Nothing too special, but gets the job done at the start.</html>
+<b>Speed:</b> 0.5 seconds<br><br><b><u>Info</u></b><br>The shooter's shots are slightly faster.</html>
+<b>Attack:</b> 2 damage<br><b>Range:</b> 125 pixels<br><br><b><u>Info</u></b><br>The shooter now has higher attack, and can shoot further.</html>
+<b>Speed:</b> 0.25 seconds<br><br><b><u>Info</u></b><br>The shooter's shots now resemble that of a rifle: quick.</html>
+<b>Speed:</b> 0.5 seconds<br><b>Attack:</b> 20 damage<br><b>Range:</b> 200 pixels<br><b>+Passive: Advanced Eyesight</b><br><br><b><u>Info</u></b><br>The deadly assassin is fully locked and loaded, here to cause havoc in any party of balloons.</html>
