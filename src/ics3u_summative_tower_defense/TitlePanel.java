@@ -44,7 +44,7 @@ public class TitlePanel extends JLayeredPane implements ActionListener {
         // Menu music
         // Background music
         try {
-            audioStream = AudioSystem.getAudioInputStream(getClass().getResource("/sound/red_bloons_salsa.wav"));
+            audioStream = AudioSystem.getAudioInputStream(getClass().getResource("/sound/galactic_rap.wav"));
             menuClip = AudioSystem.getClip();
             menuClip.open(audioStream);
             volumeControl = (FloatControl)menuClip.getControl(FloatControl.Type.MASTER_GAIN);
@@ -97,10 +97,10 @@ public class TitlePanel extends JLayeredPane implements ActionListener {
         // Credits panel
         double[][] creditsConstraints = {
             {10,260,40,10},
-            {10,40,190,10}
+            {10,40,230,10}
         };
         creditsPanel = new JPanel(new TableLayout(creditsConstraints));
-        creditsPanel.setBounds(290,175,320,250);
+        creditsPanel.setBounds(290,155,320,290);
         creditsPanel.setBorder(BorderFactory.createLineBorder(Color.GREEN,2));
         creditsPanel.setBackground(new Color(200,255,200));
         
@@ -117,6 +117,7 @@ public class TitlePanel extends JLayeredPane implements ActionListener {
         
         creditsContent = new JLabel(ExtraMethods.readLine(getClass().getResource("/txt/game_info_file.txt"), 4));
         creditsContent.setFont(new Font("Monospaced",Font.PLAIN,12));
+        creditsContent.setVerticalAlignment(JLabel.TOP);
         creditsPanel.add(creditsContent,"1,2,2,2");
         
         creditsPanel.setVisible(false);

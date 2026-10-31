@@ -76,7 +76,7 @@ public class GamePanel extends JPanel implements Runnable,ActionListener,
         
         // Background music
         try {
-            audioStream = AudioSystem.getAudioInputStream(getClass().getResource("/sound/treasures_within_the_abomination.wav"));
+            audioStream = AudioSystem.getAudioInputStream(getClass().getResource("/sound/ether_vox.wav"));
             backgroundClip = AudioSystem.getClip();
             backgroundClip.open(audioStream);
             volumeControl = (FloatControl)backgroundClip.getControl(FloatControl.Type.MASTER_GAIN);
