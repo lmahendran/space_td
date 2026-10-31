@@ -13,7 +13,7 @@ package ics3u_summative_tower_defense;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
 import tower.Tower;
 
 public class TowerPanel extends JLayeredPane implements ActionListener {

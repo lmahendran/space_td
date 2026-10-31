@@ -21,7 +21,7 @@ import java.io.File;
 import java.time.Clock;
 import java.util.ArrayList;
 import java.util.Random;
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
 
 public class GamePanel extends JPanel implements Runnable,ActionListener,
         KeyListener,MouseListener {
@@ -76,8 +76,7 @@ public class GamePanel extends JPanel implements Runnable,ActionListener,
         
         // Background music
         try {
-            File backgroundMusicFile = new File("treasures_within_the_abomination.wav");
-            audioStream = AudioSystem.getAudioInputStream(backgroundMusicFile);
+            audioStream = AudioSystem.getAudioInputStream(getClass().getResource("/sound/ether_vox.wav"));
             backgroundClip = AudioSystem.getClip();
             backgroundClip.open(audioStream);
             volumeControl = (FloatControl)backgroundClip.getControl(FloatControl.Type.MASTER_GAIN);
@@ -152,7 +151,7 @@ public class GamePanel extends JPanel implements Runnable,ActionListener,
             boolean codeExists = true;
             while (codeExists) {
                 codeExists = false;
-                if (!ExtraMethods.readLine(getClass().getResource("/game_saves/" + gameCode + ".txt"),0).equals("")) {
+                if (ExtraMethods.getSaveFile(String.valueOf(gameCode)).exists()) {
                     codeExists = true;
                     gameCode = random.nextInt(100000,999999);
                 }
@@ -572,16 +571,10 @@ public class GamePanel extends JPanel implements Runnable,ActionListener,
                                     }
                                 }
 
-                                File gameFile = new File(System.getProperty("user.dir") + "\\src\\game_saves\\" + gameCode + ".txt");
-                                try {
-                                    System.out.println(gameFile.getPath());
-                                    gameFile.createNewFile();
-                                } catch (Exception e) {
-                                    System.out.println("Failed");
-                                }
-                                ExtraMethods.write(getClass().getResource("/game_saves/" + gameCode + ".txt"),saveInfo[0],false);
-                                ExtraMethods.write(getClass().getResource("/game_saves/" + gameCode + ".txt"),saveInfo[1],true);
-                                ExtraMethods.write(getClass().getResource("/game_saves/" + gameCode + ".txt"),saveInfo[2],true);
+                                File gameFile = ExtraMethods.getSaveFile(String.valueOf(gameCode));
+                                ExtraMethods.write(gameFile,saveInfo[0],false);
+                                ExtraMethods.write(gameFile,saveInfo[1],true);
+                                ExtraMethods.write(gameFile,saveInfo[2],true);
                                 
                                 // Redisplay next round's wave message
                                 if (!ExtraMethods.readLine(getClass().getResource("/txt/wave_messages.txt"),WaveManager.getWave()+1).equals("")) {

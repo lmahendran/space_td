@@ -14,7 +14,6 @@ package balloon;
 import ics3u_summative_tower_defense.*;
 import javax.sound.sampled.*;
 import java.awt.*;
-import java.io.File;
 import java.time.Clock;
 import java.util.ArrayList;
 import java.util.Random;
@@ -414,8 +413,7 @@ public class Balloon {
     // Sound effect method (plays whenever a balloon is popped)
     public static void playPopEffect() {
         try {
-            File popFile = new File("pop.wav");
-            AudioInputStream popInputStream = AudioSystem.getAudioInputStream(popFile);
+            AudioInputStream popInputStream = AudioSystem.getAudioInputStream(Balloon.class.getResource("/sound/pop.wav"));
             Clip popEffect = AudioSystem.getClip();
             popEffect.open(popInputStream);
             popEffect.start();

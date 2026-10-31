@@ -1,5 +1,0 @@
-<b>Speed Buff:</b> 0%<br><b>Range Buff:</b> 0%<br><b>Discount:</b> 0%<br><b>Attack Buff:</b> 0%<br><b>Range:</b> 90 pixels<br><br><b><u>Info</u></b><br>The booster can't attack... but at this point, it also can't boost. Maybe it needs some upgrades?</html>
-<b>Speed Buff:</b> 10%<br><br><b><u>Info</u></b><br>The boost can now boost the speed of towers in range! Pretty nice, isn't it?</html>
-<b>Discount:</b> 10%<br><br><b><u>Info</u></b><br>Now, a discount has been provided for upgrades in range! This will prove especially useful later on. Awesome!</html>
-<b>Range Buff:</b> 25%<br><b>+Passive: Hidden Detector</b><br><br><b><u>Info</u></b><br>Towers in range gain extra range. But even better, this tower allows all towers in range to see hidden balloons. Simply amazing!</html>
-<b>Speed Buff:</b> 20%<br><b>Range:</b> 160 pixels<br><b>+Ability: Attack Surge</b><br><br><b><u>Info</u></b><br>Fully equipped with many buffs, this tower is ready to serve the towers' success. It gains an ability that provides a temporary 40% attack buff to all towers in range. Almost too good...</html>

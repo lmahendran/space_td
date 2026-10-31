@@ -49,8 +49,8 @@ public class LosePanel extends JPanel {
         
         // Delete save file of lost game
         if ((difficulty < 2 && wave > 0) || (difficulty == 2 && wave > 2)) {
-            File gameFile = new File(getClass().getResource("/game_saves/" + gameCode + ".txt").getPath());
-            while (!gameFile.delete()) {
+            File gameFile = ExtraMethods.getSaveFile(String.valueOf(gameCode));
+            if (gameFile.exists() && !gameFile.delete()) {
                 System.out.println("Deletion of file \"" + gameCode + ".txt\" unsuccessful.");
             }
         }
