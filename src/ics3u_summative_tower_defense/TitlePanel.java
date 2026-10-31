@@ -126,10 +126,10 @@ public class TitlePanel extends JLayeredPane implements ActionListener {
         // How to play panel
         double[][] howToPlayConstraints = {
             {10,260,40,10},
-            {10,40,190,10}
+            {10,40,230,10}
         };
         howToPlayPanel = new JPanel(new TableLayout(howToPlayConstraints));
-        howToPlayPanel.setBounds(290,175,320,250);
+        howToPlayPanel.setBounds(290,155,320,290);
         howToPlayPanel.setBorder(BorderFactory.createLineBorder(Color.MAGENTA,2));
         howToPlayPanel.setBackground(new Color(255,200,255));
         
@@ -146,6 +146,7 @@ public class TitlePanel extends JLayeredPane implements ActionListener {
         
         howToPlayContent = new JLabel(ExtraMethods.readLine(getClass().getResource("/txt/game_info_file.txt"), 3));
         howToPlayContent.setFont(new Font("Monospaced",Font.PLAIN,12));
+        howToPlayContent.setVerticalAlignment(JLabel.TOP);
         howToPlayPanel.add(howToPlayContent,"1,2,2,2");
         
         howToPlayPanel.setVisible(false);
