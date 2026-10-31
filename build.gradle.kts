@@ -86,6 +86,35 @@ val jpackageImage = tasks.register<Exec>("jpackageImage") {
     )
 }
 
+// Windows installer (.exe) built from the app folder above; needs WiX Toolset 3 installed
+tasks.register<Exec>("packageInstaller") {
+    group = "distribution"
+    description = "Builds a Windows installer with jpackage (requires WiX Toolset 3)."
+    dependsOn(jpackageImage)
+    val installerOutput = layout.buildDirectory.dir("jpackage/installer")
+    outputs.dir(installerOutput)
+    doFirst {
+        delete(installerOutput)
+        executable = toolchainLauncher.get().metadata.installationPath.file("bin/jpackage").asFile.path
+    }
+    args(
+        "--type", "exe",
+        "--name", appName,
+        "--app-version", appVersion,
+        "--app-image", jpackageOutput.get().dir(appName).asFile.path,
+        "--vendor", "Logesh Mahendran",
+        "--description", appName,
+        "--win-per-user-install",
+        "--win-menu",
+        "--win-menu-group", appName,
+        "--win-shortcut-prompt",
+        "--win-shortcut",
+        // Keep this fixed so new versions upgrade the existing install instead of adding a second copy
+        "--win-upgrade-uuid", "1d846aa3-de62-475d-a710-79238f859ba3",
+        "--dest", installerOutput.get().asFile.path
+    )
+}
+
 tasks.register<Zip>("packageZip") {
     group = "distribution"
     description = "Zips the jpackage app folder for download."
