@@ -22,7 +22,7 @@ public class GameFrame extends JFrame {
         // Set up defaults
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
-        this.setTitle("ICS3U Summative - Space Tower Defense");
+        this.setTitle("Space Tower Defense");
         this.setIconImage(ExtraMethods.loadImage(getClass().getResource("/img/shooter_sprite_0.png")));
         
         // Make mainPanel

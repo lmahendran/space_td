@@ -48,3 +48,48 @@ tasks.jar {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
 }
+
+// Downloadable app: a folder with "Space Tower Defense.exe" and its own Java runtime, zipped up
+val appName = "Space Tower Defense"
+val appVersion = "1.0.0"
+val jpackageInput = layout.buildDirectory.dir("jpackage/input")
+val jpackageOutput = layout.buildDirectory.dir("jpackage/output")
+val toolchainLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
+
+val stageJpackageInput = tasks.register<Sync>("stageJpackageInput") {
+    from(tasks.jar)
+    into(jpackageInput)
+}
+
+val jpackageImage = tasks.register<Exec>("jpackageImage") {
+    group = "distribution"
+    description = "Builds a self-contained app folder with jpackage."
+    dependsOn(stageJpackageInput)
+    inputs.dir(jpackageInput)
+    inputs.file("packaging/space_td.ico")
+    outputs.dir(jpackageOutput)
+    doFirst {
+        // jpackage refuses to overwrite an existing app folder
+        delete(jpackageOutput)
+        executable = toolchainLauncher.get().metadata.installationPath.file("bin/jpackage").asFile.path
+    }
+    args(
+        "--type", "app-image",
+        "--name", appName,
+        "--app-version", appVersion,
+        "--input", jpackageInput.get().asFile.path,
+        "--main-jar", "space_td.jar",
+        "--main-class", application.mainClass.get(),
+        "--icon", file("packaging/space_td.ico").path,
+        "--add-modules", "java.desktop",
+        "--dest", jpackageOutput.get().asFile.path
+    )
+}
+
+tasks.register<Zip>("packageZip") {
+    group = "distribution"
+    description = "Zips the jpackage app folder for download."
+    from(jpackageImage)
+    archiveFileName = "SpaceTowerDefense-$appVersion-windows.zip"
+    destinationDirectory = layout.buildDirectory.dir("distributions")
+}
