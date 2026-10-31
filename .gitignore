@@ -26,3 +26,10 @@ replay_pid*
 # Gradle
 .gradle/
 !gradle/wrapper/gradle-wrapper.jar
+
+# Build output (Gradle and NetBeans)
+build/
+dist/
+
+# NetBeans per-user settings
+nbproject/private/

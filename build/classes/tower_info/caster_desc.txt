@@ -1,5 +1,0 @@
-<b>Speed:</b> 1 second<br><b>Attack:</b> 2 damage<br><b>Range:</b> 50 pixels<br><br><b><u>Info</u></b><br>This tower has the slightest trace of magical power. Can it become stronger?</html>
-<b>Attack:</b> 3 damage<br><b>Range:</b> 75 pixels<br><br><b><u>Info</u></b><br>The power begins to brew...</html>
-<b>Speed:</b> 0.4 seconds<br><b>Range:</b> 100 pixels<br><br><b><u>Info</u></b><br>The magic continues to grow...</html>
-<b>Attack:</b> 5 damage<br><b>Range:</b> 80 pixels<br><br><b><u>Info</u></b><br>The expanding power boosts the caster's attack and range...</html>
-<b>Speed:</b> 0.1 seconds<br><b>Attack:</b> 15 damage<br><b>Range:</b> 140 pixels<br><b>+Passive: Hidden Seeker</b><br><br><b><u>Info</u></b><br>The magic consumed caster harnesses its arcane power. It is now able to strip the hidden property from balloons in range every few seconds.</html>
