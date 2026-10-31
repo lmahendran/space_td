@@ -183,10 +183,10 @@ public class NewGamePanel extends JLayeredPane implements Runnable,ActionListene
         // Code info panel
         double[][] codeInfoConstraints = {
             {10,260,40,10},
-            {10,40,180,10}
+            {10,40,220,10}
         };
         codeInfoPanel = new JPanel(new TableLayout(codeInfoConstraints));
-        codeInfoPanel.setBounds(290,180,320,240);
+        codeInfoPanel.setBounds(290,160,320,280);
         codeInfoPanel.setBorder(BorderFactory.createLineBorder(Color.BLUE,2));
         codeInfoPanel.setBackground(new Color(200,200,255));
         // Remove code info button
@@ -203,6 +203,7 @@ public class NewGamePanel extends JLayeredPane implements Runnable,ActionListene
         // Code info content
         codeInfoContent = new JLabel(ExtraMethods.readLine(getClass().getResource("/txt/game_info_file.txt"), 1));
         codeInfoContent.setFont(new Font("Monospaced",Font.PLAIN,12));
+        codeInfoContent.setVerticalAlignment(JLabel.TOP);
         codeInfoPanel.add(codeInfoContent,"1,2,2,2");
         
         codeInfoPanel.setVisible(false);
@@ -211,7 +212,7 @@ public class NewGamePanel extends JLayeredPane implements Runnable,ActionListene
         // General Info panel
         double[][] generalInfoConstraints = {
             {10,260,40,10},
-            {10,40,220,10}
+            {10,40,260,10}
         };
         generalInfoButton = new JButton();
         generalInfoButton.setIcon(new ImageIcon(getClass().getResource("/img/general_info_icon.png")));
@@ -221,7 +222,7 @@ public class NewGamePanel extends JLayeredPane implements Runnable,ActionListene
         this.add(generalInfoButton);
         
         generalInfoPanel = new JPanel(new TableLayout(generalInfoConstraints));
-        generalInfoPanel.setBounds(290,160,320,280);
+        generalInfoPanel.setBounds(290,140,320,320);
         generalInfoPanel.setBorder(BorderFactory.createLineBorder(Color.RED,2));
         generalInfoPanel.setBackground(new Color(255,200,200));
         // Remove general info button
@@ -238,6 +239,7 @@ public class NewGamePanel extends JLayeredPane implements Runnable,ActionListene
         // General info content
         generalInfoContent = new JLabel(ExtraMethods.readLine(getClass().getResource("/txt/game_info_file.txt"), 2));
         generalInfoContent.setFont(new Font("Monospaced",Font.PLAIN,12));
+        generalInfoContent.setVerticalAlignment(JLabel.TOP);
         generalInfoPanel.add(generalInfoContent,"1,2,2,2");
         
         generalInfoPanel.setVisible(false);
