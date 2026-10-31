@@ -51,28 +51,41 @@ public class ExtraMethods {
         }
     }
     
-    // Read line method
+    // Read line method (reads through the URL's stream so it also works inside a jar)
     public static String readLine(URL filePath,int line) {
         String word = "";
         try {
-            System.out.println(filePath.getPath());
-            FileReader fr = new FileReader(filePath.getFile());
-            BufferedReader br = new BufferedReader(fr);
+            BufferedReader br = new BufferedReader(new InputStreamReader(filePath.openStream()));
             for (int i = 0; i < line; i++) {
                 word = br.readLine();
             }
             br.close();
-            return word;
+            return word == null ? "" : word;
         } catch (Exception e) {
             return "";
         }
-        
+
     }
-    
-    // Write method
-    public static void write(URL filePath,String text,boolean append) {
+
+    // Read line method for files on disk (save files)
+    public static String readLine(File file,int line) {
         try {
-            File file = new File(filePath.getPath());
+            return readLine(file.toURI().toURL(),line);
+        } catch (Exception e) {
+            return "";
+        }
+    }
+
+    // Save file location (saves live in the user's home folder, since the jar itself can't be written to)
+    public static File getSaveFile(String gameCode) {
+        File saveFolder = new File(System.getProperty("user.home"),".space_td" + File.separator + "saves");
+        saveFolder.mkdirs();
+        return new File(saveFolder,gameCode + ".txt");
+    }
+
+    // Write method
+    public static void write(File file,String text,boolean append) {
+        try {
             FileWriter fw = new FileWriter(file,append);
             PrintWriter pw = new PrintWriter(fw);
             pw.println(text);

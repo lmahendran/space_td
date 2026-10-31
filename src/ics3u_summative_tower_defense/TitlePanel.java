@@ -14,7 +14,6 @@ package ics3u_summative_tower_defense;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.io.File;
 import javax.sound.sampled.*;
 import info.clearthought.layout.TableLayout;
 
@@ -45,8 +44,7 @@ public class TitlePanel extends JLayeredPane implements ActionListener {
         // Menu music
         // Background music
         try {
-            File backgroundMusicFile = new File("red_bloons_salsa.wav");
-            audioStream = AudioSystem.getAudioInputStream(backgroundMusicFile);
+            audioStream = AudioSystem.getAudioInputStream(getClass().getResource("/sound/red_bloons_salsa.wav"));
             menuClip = AudioSystem.getClip();
             menuClip.open(audioStream);
             volumeControl = (FloatControl)menuClip.getControl(FloatControl.Type.MASTER_GAIN);

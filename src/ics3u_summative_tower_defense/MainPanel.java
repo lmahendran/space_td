@@ -172,12 +172,13 @@ public class MainPanel extends JPanel implements ActionListener, Runnable {
             // Starting game from previous game
             } else if (e.getSource() == newGamePanel.codeBeginButton) {
                 if (newGamePanel.codeField.getText().length() == 6) {
-                    String validCheck = ExtraMethods.readLine(getClass().getResource("/game_saves/" + newGamePanel.codeField.getText() + ".txt"),1);
+                    java.io.File saveFile = ExtraMethods.getSaveFile(newGamePanel.codeField.getText());
+                    String validCheck = ExtraMethods.readLine(saveFile,1);
                     if (!validCheck.equals("")) {
                         String[] prevInfo = {
                             validCheck,
-                            ExtraMethods.readLine(getClass().getResource("/game_saves/" + newGamePanel.codeField.getText() + ".txt"),2),
-                            ExtraMethods.readLine(getClass().getResource("/game_saves/" + newGamePanel.codeField.getText() + ".txt"),3)
+                            ExtraMethods.readLine(saveFile,2),
+                            ExtraMethods.readLine(saveFile,3)
                         };
                         System.out.println(Arrays.toString(prevInfo));
                         gamePanel = new GamePanel(0,0,prevInfo);
