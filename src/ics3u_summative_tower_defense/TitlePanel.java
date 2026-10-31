@@ -16,7 +16,7 @@ import java.awt.*;
 import java.awt.event.*;
 import java.io.File;
 import javax.sound.sampled.*;
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
 
 public class TitlePanel extends JLayeredPane implements ActionListener {
 

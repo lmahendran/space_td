@@ -21,7 +21,7 @@ import java.io.File;
 import java.time.Clock;
 import java.util.ArrayList;
 import java.util.Random;
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
 
 public class GamePanel extends JPanel implements Runnable,ActionListener,
         KeyListener,MouseListener {

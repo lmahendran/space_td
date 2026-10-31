@@ -15,7 +15,7 @@ import ics3u_summative_tower_defense.ExtraMethods;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
 
 public class TowerStats extends JPanel implements ActionListener {
     

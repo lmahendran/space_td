@@ -15,7 +15,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.Arrays;
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
 
 public class MainPanel extends JPanel implements ActionListener, Runnable {
     

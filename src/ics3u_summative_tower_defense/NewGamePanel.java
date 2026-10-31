@@ -14,7 +14,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.time.Clock;
-import layout.TableLayout;
+import info.clearthought.layout.TableLayout;
 
 public class NewGamePanel extends JLayeredPane implements Runnable,ActionListener,
         KeyListener {
