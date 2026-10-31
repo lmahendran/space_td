@@ -51,7 +51,7 @@ tasks.jar {
 
 // Downloadable app: a folder with "Space Tower Defense.exe" and its own Java runtime, zipped up
 val appName = "Space Tower Defense"
-val appVersion = "1.0.0"
+val appVersion = "1.0.1"
 val jpackageInput = layout.buildDirectory.dir("jpackage/input")
 val jpackageOutput = layout.buildDirectory.dir("jpackage/output")
 val toolchainLauncher = javaToolchains.launcherFor { languageVersion = JavaLanguageVersion.of(21) }
